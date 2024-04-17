@@ -27,6 +27,8 @@ function consultarCEP() {
       });
   }
   
+
+  
   function limparCampos() {
     document.getElementById('bairro').value = '';
     document.getElementById('cidade').value = '';
