@@ -1,0 +1,271 @@
+@font-face {
+    font-family: Poppins;
+    src: url(/font/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(/font/Roboto-Regular.ttf);
+}
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url(/img/fundo-ondulado-gradiente-verde-estilo-papel_23-2149119810.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+header{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    box-shadow: 0px 1px 15px 0px;
+    filter: opacity(95%);
+}
+header #barra-pesquisa{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+#barra-pesquisa p{
+    font-family: Poppins;
+    font-size: 14px;
+    border: 1px solid rgb(255, 255, 255);
+    transition: 0.2s ease-in-out;
+    cursor: pointer; 
+}
+#barra-pesquisa p:hover{
+    
+    border-bottom: 2px solid #ffcf60;
+}
+#barra-pesquisa button{
+    align-items: center;
+    display: flex;
+    font-family: Poppins;
+    border-radius: 30px;
+    border: none;
+    padding: 15px;
+    transition: all 0.2s ease-in-out;
+}
+#barra-pesquisa button:hover{
+    background-color: #0d8248;
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    color: #0d82486e;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 195px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: Poppins;
+}  
+.dropdown:hover .dropdown-content {
+    display: block;
+}  
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+
+
+.caixa-cadastro{
+    background-color: #fff;
+    width: 880px;
+    height: 530px;
+    margin: auto;
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    text-align: center;
+    box-shadow: 0px 10px 15px 0px rgba(255, 255, 255, 0.315);
+    flex-wrap: wrap;
+}
+#painel-cad-1{
+    width: 250px;
+    height: 53  0px;
+    background-color: #ffcf60;
+   
+    
+}
+#painel-cad-1 h1{
+    font-family: Roboto;
+    font-size: 34px;
+    margin: 90px 0px 0px 0px;
+}
+#painel-cad-1 p{
+    font-family: Poppins;
+    font-size: 12px;
+    width: 220px;
+    
+}
+#painel-1-letra{
+    padding: 60px 10px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#painel-1-letra button{
+    width: 160px;
+    padding: 15px;
+    border-radius: 20px;
+    background-color: #fff;
+    border: none;
+    margin-top: 20px;
+    transition: all 0.2s ease-in;
+}
+#painel-1-letra button:hover{
+    background-color: black;
+    color: white;
+}
+.painel-cad-2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 550px;
+    margin: auto;
+}
+.painel-cad-2 h2{
+    font-family: Roboto;
+    font-size: 32px;
+    margin: 0;
+}
+.painel-cad-2 #icon-cad{
+    display: flex;
+    justify-content: space-evenly;
+    
+    gap: 15px;
+}
+input{
+    width: 190px;
+    padding: 10px;
+    outline: none;
+    border: none;
+}
+.input-person{
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    margin: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f1f1f1;
+}
+
+input[type=submit]{
+    margin: 12px;
+    border-radius: 20px;
+    border: none;
+    padding: 8px;
+    width: 130px;
+    background-color: black;
+    color: #fff;
+}
+#cep-input{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    width: 170px;
+
+}
+#cep-input button{
+    padding: 4px;
+    margin: 5px;
+    border: 1px solid black;
+    font-family: Poppins;
+    background-color: #0d8248;
+    color: white;
+}
+.input-person-cep{
+    border: 1px solid rgba(0, 0, 0, 0.5);
+    margin: 5px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #f1f1f1;
+}
+.input-person-cep input{
+    padding: 6px;
+}
+
+.input-person-cep #cep{
+    width: 130px;
+}
+.person-form{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.person-form section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.endereco{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 20px;
+}
+.endereco aside{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 30px;
+}
+.endereco summary{
+    font-family: Poppins;
+    padding: 10px;
+    margin: 20px 0px 0px;
+    width: 200px;
+    margin: auto;
+}
+.select-person{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 0px 18px;
+}
+.select-person label{
+    font-family: Roboto;
+    font-size: 12px;
+}
+.select-person select{
+    padding: 4px;
+}
+#municipio, #estado{
+    width: 220px;
+    margin: 0px 0px 10px 0px;
+}
+#estcivil-input select{
+    width: 225px;
+    font-family: Poppins;
+    font-size: 12px;
+}
+#estcivil-input label{
+    font-family: Poppins;
+    font-size: 12px;
+}

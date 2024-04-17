@@ -1,0 +1,186 @@
+@font-face {
+    font-family: Poppins;
+    src: url(/font/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(/font/Roboto-Regular.ttf);
+}
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url(/img/fundo-ondulado-gradiente-verde-estilo-papel_23-2149119810.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+header{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    box-shadow: 0px 1px 15px 0px;
+    filter: opacity(95%);
+}
+header #barra-pesquisa{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+#barra-pesquisa p{
+    font-family: Poppins;
+    font-size: 14px;
+    border: 1px solid rgb(255, 255, 255);
+    transition: 0.2s ease-in-out;
+    cursor: pointer; 
+}
+#barra-pesquisa p:hover{
+    
+    border-bottom: 2px solid #ffcf60;
+}
+#barra-pesquisa button{
+    align-items: center;
+    display: flex;
+    font-family: Poppins;
+    border-radius: 30px;
+    border: none;
+    padding: 15px;
+    transition: all 0.2s ease-in-out;
+}
+#barra-pesquisa button:hover{
+    background-color: #0d8248;
+    color: white;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+    color: #0d82486e;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 195px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: Poppins;
+}  
+.dropdown:hover .dropdown-content {
+    display: block;
+}  
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+main{
+    display: flex;
+    background-color: white;
+    margin: auto;
+    margin-top: 100px;
+    width: 650px;
+    height: 450px;
+}
+.painel-cad-1 #painel-1-letra{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    font-family: Poppins;
+    
+}
+#painel-1-letra h1{
+    margin-top: 60px;
+    font-family: Roboto;
+}
+.painel-cad-1{
+    width: 350px;
+    height: 450px;
+    background-color: #ffcf60;
+}
+.painel-cad-1 button{
+    width: 120px;
+    padding: 14px;
+    border: none;
+    background-color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.2s ease-in;
+}
+.painel-cad-1 button:hover{
+    background-color: black;
+    color: white;
+}
+.painel-cad-2, form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    text-align: center;
+
+    
+}
+.painel-cad-2 h2{
+    font-family: Roboto;
+    margin: 0;
+    margin-top: 100px;
+}
+.painel-cad-2{
+    padding: 20px;
+    width: 500px;
+}
+#opcao-input a{
+    text-decoration: none;
+    color: #0d8248;
+    font-family: Poppins;
+    font-size: 11px;
+    
+}
+.painel-cad-2 button{
+    width: 240px;
+    padding: 10px;
+    margin: 15px 0px;
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+#opcao-input{
+    margin: 10px 0px;
+   display: flex;
+   justify-content: space-between;
+   gap: 34px;
+   align-items: baseline;
+   font-size: 12px;
+   font-family: Poppins;
+}
+form input{
+    border: none;
+    outline: none;
+    width: 240px;
+    padding: 10px 2px;
+}
+.input-person{
+    margin: 8px;
+    width: 240px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: #97979744;
+}
+#icon-cad{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 20px;
+}

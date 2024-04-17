@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/cadastro.css" />
+    <title>Document</title>
+  </head>
+  <body>
+
+    <header>
+      <img class="icone-logo" src="/img/images.png" alt="" width="300px" />
+      <ul id="barra-pesquisa">
+        <p>Inovação e Tecnologia</p>
+        <p>Sustentabilidade</p>
+        <p>Energia em Transformção</p>
+        <p>Quem Somos?</p>
+        <div class="dropdown">
+          <button>
+            Entrar ou se Cadastrar <img src="/img/2354573.png" width="20px" />
+          </button>
+          <div class="dropdown-content">
+            <a href="#">Entrar</a>
+            <a href="/html/cadastro.html">Cadastrar</a>
+          </div>
+        </div>
+      </ul>
+    </header>
+
+    <main>
+      <article class="caixa-cadastro">
+        <section id="painel-cad-1">
+          <div id="painel-1-letra">
+            <h1>Bem vindo!</h1>
+            <p>
+              Para se manter conectado conosco, faça login com suas informações
+              pessoais
+            </p>
+            <a href="/html/login.html">
+            <button>Entrar</button>
+          </a>
+          </div>
+        </section>
+
+        <div class="painel-cad-2">
+          <h2>Criando sua Conta</h2>
+
+          <figure id="icon-cad">
+            <img src="/img/facebook-icone-noir.png" alt="" width="20px" />
+            <img
+              src="/img/png-transparent-google-logo-brand-page-symbol-circle-black-and-white.png"
+              alt=""
+              width="20px"
+            />
+            <img src="/img/linkdin-black-white.png" alt="" width="20px" />
+          </figure>
+
+          <form action="" onsubmit="event.preventDefault(); consultarCEP()">
+            <div class="person-form">
+                
+              <section>
+                <div class="input-person" onclick="BuscarCep(this)">
+                  <img
+                    src="/img/email-and-mail-icon-black-free-png.webp"
+                    alt=""
+                    width="15px"
+                  />
+                  <input
+                    type="email"
+                    id="Email"
+                    placeholder="Digite seu Email"
+                  />
+                </div>
+
+                <div class="input-person" onclick="TrocarBorderCor(this)">
+                  <img src="/img/2354573.png" alt="" width="15px" />
+                  <input
+                    name="CPF"
+                    type="text"
+                    id="CPF"
+                    placeholder="Digite seu CPF"
+                    oninput="CPFMascara(this)"
+                  />
+                </div>
+
+                <div class="input-person" onclick="TrocarBorderCor(this)">
+                  <img src="/img/1828439-nome.png" alt="" width="15px" />
+                  <input type="text" id="nome" placeholder="Digite seu Nome" />
+                </div>
+
+                <div class="input-person" onclick="TrocarBorderCor(this)">
+                  <img src="/img/126523-telefone.png" alt="" width="15px" />
+                  <input
+                    type="text"
+                    id="telefone"
+                    placeholder="Digite seu Telefone"
+                    oninput="TelefoneMascara(this)"
+                  />
+                </div>
+              </section>
+
+              <section>
+                <div class="input-person" onclick="TrocarBorderCor(this)">
+                  <img src="/img/263088-RG.png" alt="" width="15px" />
+                  <input
+                    type="text"
+                    id="RG"
+                    placeholder="Digite seu RG"
+                    oninput="RGMascara(this)"
+                  />
+                </div>
+
+                <div class="input-person" onclick="TrocarBorderCor(this)">
+                  <img
+                    src="/img/4731440-data-nascimento.png"
+                    alt=""
+                    width="15px"
+                  />
+                  <input
+                    type="text"
+                    id="DataNasc"
+                    oninput="DATAMascara(this)"
+                    placeholder="Data de Nascimento:"
+                  />
+                </div>
+
+                <div class="input-person" onclick="TrocarBorderCor(this)">
+                  <section id="estcivil-input">
+                    <label for="">Estado Civil:</label>
+                    <select
+                      name=""
+                      id=""
+                      id="EstCivil"
+                      placeholder="Estado civil"
+                    >
+                      <option value="">Selecione...</option>
+                      <option value="">Solteiro (a)</option>
+                      <option value="">Casado (a)</option>
+                      <option value="">Divorciado (a)</option>
+                      <option value="">Viúvo (a)</option>
+                    </select>
+                  </section>
+                </div>
+
+                <div class="input-person" onclick="TrocarBorderCor(this)">
+                  <img src="/img/cadeado-password.png" alt="" width="15px" />
+                  <input
+                    type="password"
+                    id="senha"
+                    placeholder="Digite sua Senha"
+                  />
+                </div>
+              </section>
+            </div>
+
+            <details class="endereco">
+              <summary>Endereço civil</summary>
+
+              <div id="cep-input">
+                <div class="input-person-cep" onclick="TrocarBorderCor(this)">
+                  <img src="/img/2826728-bairro.jpg" alt="" width="15px" />
+                  <input type="text" id="cep" placeholder="CEP" />
+                </div>
+                <button type="submit">Consultar</button>
+
+                <button onclick="limparCampos()">Limpar</button>
+              </div>
+
+              <aside>
+                <div class="input-person" onclick="TrocarBorderCor(this)">
+                  <img src="/img/3095581-endereco.png" alt="" width="15px" />
+                  <input type="text" id="uf" placeholder="Estado" />
+                </div>
+
+                <div class="input-person" onclick="TrocarBorderCor(this)">
+                  <img src="/img/3095581-endereco.png" alt="" width="15px" />
+                  <input type="text" id="cidade" placeholder="cidade" />
+                </div>
+              </aside>
+
+              <!--
+                            <aside>
+                                <div class="select-person">
+                                    <label for="municipio">Município:</label>
+                                        <select name="municipio" id="municipio" name="cidade">
+                                            <option value="">Selecione um estado primeiro</option>
+                                        </select>
+                                </div>
+
+                                
+                                 
+                                <div class="select-person">
+                                    <label for="">Qual estado voce mora?</label>
+                                    <select name="estado" id="estado" name="estado" onchange="BuscarMunicipios()">
+                                    <option value="">Selecione...</option>
+                                    <optgroup label="Região Norte">
+                                    <option value="AC">Acre - AC</option>
+                                    <option value="AP">Amapá - AP</option>
+                                    <option value="AM">Amazonas - AM</option>
+                                    <option value="PA">Pará - PA</option>
+                                    <option value="RO">Rondônia - RO</option>
+                                    <option value="RR">Roraima - RR</option>
+                                    <option value="TO">Tocantins - TO</option>
+                                </optgroup>
+                                <optgroup label="Região Nordeste">
+                                    
+                                    <option value="AL">Alagoas - AL</option>
+                                    <option value="BA">Bahia - BA</option>
+                                    <option value="CE">Ceará - CE</option>
+                                    <option value="MA">Maranhão - MA</option>
+                                    <option value="PB">Paraíba - PB</option>
+                                    <option value="PE">Pernambuco - PE</option>
+                                    <option value="PI">Piauí - PI</option>
+                                    <option value="RN">Rio Grande do Norte - RN</option>
+                                    <option value="SE">Sergipe - SE</option>
+                                </optgroup>
+                                <optgroup label="Região Sudeste">
+                                    <option value="ES">Espírito Santo - ES</option>
+                                    <option value="MG">Minas Gerais - MG</option>
+                                    <option value="RJ">Rio de Janeiro - RJ</option>
+                                    <option value="SP">São Paulo - SP</option>
+                                </optgroup>
+                                <optgroup label="Região Sul">
+                                    <option value="PR">Paraná - PR</option>
+                                    <option value="RS">Rio Grande do Sul - RS</option>
+                                    <option value="SC">Santa Catarina - SC</option>
+                                </optgroup>
+                                <optgroup label="Região Centro-Oeste">
+                                    <option value="DF">Distrito Federal - DF</option>
+                                    <option value="GO">Goiás - GO</option>
+                                    <option value="MT">Mato Grosso - MT</option>
+                                    <option value="MS">Mato Grosso do Sul - MS</option>
+                                </optgroup>
+                            </div>
+                                </select>
+                            </aside>
+                            -->
+
+              <aside>
+                <div class="input-person" onclick="TrocarBorderCor(this)">
+                  <img src="/img/3095581-endereco.png" alt="" width="15px" />
+                  <input
+                    type="text"
+                    id="logradouro"
+                    placeholder="Nome da Rua"
+                  />
+                </div>
+
+                <div class="input-person" onclick="TrocarBorderCor(this)">
+                  <img src="/img/2826728-bairro.jpg" alt="" width="15px" />
+                  <input type="text" id="bairro" placeholder="Bairro" />
+                </div>
+              </aside>
+            </details>
+          </form>
+
+          <input type="submit" value="Cadastrar" id="submit" />
+        </div>
+      </article>
+    </main>
+  </body>
+  <script src="/js/animacao.js"></script>
+  <script src="/js/mascaras.js"></script>
+  <script src="/js/function.js"></script>
+</html>

@@ -1,0 +1,496 @@
+/*
+ ! ADICIONANDO FONTES AO HTML 
+*/
+@font-face {
+    font-family: Poppins;
+    src: url(/font/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(/font/Roboto-Regular.ttf);
+}
+body{
+    margin: 0;
+    box-sizing: border-box;
+    background-image: url(/img/fundo-ondulado-gradiente-verde-estilo-papel_23-2149119810.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+/*
+ ! CABECALHO
+*/
+header{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    box-shadow: 0px 1px 15px 0px;
+    filter: opacity(95%);
+}
+
+/*
+ * * CABECALHO
+ ! BARRA DE PESQUISA E SUAS ANIMAÇÕES
+*/
+header #barra-pesquisa{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+#barra-pesquisa p{
+    font-family: Poppins;
+    font-size: 14px;
+    border: 1px solid rgb(255, 255, 255);
+    transition: 0.2s ease-in-out;
+    cursor: pointer; 
+}
+#barra-pesquisa p:hover{
+    
+    border-bottom: 2px solid #ffcf60;
+}
+#barra-pesquisa button{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Poppins;
+    border-radius: 30px;
+    border: none;
+    padding: 15px;
+    transition: all 0.2s ease-in-out;
+}
+#barra-pesquisa button:hover{
+    background-color: #0d8248;
+    color: white;
+}
+
+/*
+ * * CABECALHO
+ ! MENU DROPDOWN (ENTRAR E CADASTRAR)
+*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+    flex-wrap: wrap;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 195px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: Poppins;
+}  
+.dropdown:hover .dropdown-content {
+    display: block;
+}  
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
+
+/*
+ * * PAINEL PRINCIPAL
+ ! PAINEL PRINCIPAL "Vamos colocar nossa energia para liderar uma transição energética justa"
+*/
+
+#artigo-1{
+    width: 670px;
+    padding: 160px 0px 0px 80px;
+    color: white;
+    font-family: Roboto;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#artigo-1 h1{
+    font-size: 48px;
+}
+#artigo-1 button{
+    padding: 25px;
+    border: none;
+    width: 300px;
+    border-radius: 20px;
+    outline: none;
+    background-color: #f7c145;
+    color: white;
+    font-family: Roboto;
+    font-size: 20px;
+}
+
+
+
+/*
+ * * PAINEL SECUNDARIO
+ ! CARDS SOBRE "DESTAQUE"
+*/
+.Destaques-card{
+    margin-top: 320px;
+    padding: 30px;
+    background-color: white;
+}
+.Acesse-card{
+    padding: 60px 0px;
+    background-color: white;
+}
+
+
+/*
+* * PAINEL TERCIARIO
+ ! PAINEL TERCIARIO "Crie sua carreira e nos ajude a repensar o agora e transformar o futuro"
+*/
+.Carreira-petro{
+    padding: 140px;
+    text-align: center;
+}
+.Carreira-petro h1{
+    font-size: 32px;
+    font-family: Roboto;
+    color: #fff;
+}
+.Carreira-petro button{
+    padding: 20px;
+    font-size: 14px;
+    border-radius: 30px;
+    border: none;
+    background-color: rgba(241, 241, 241, 0.425);
+    backdrop-filter: blur(25px);
+    transition: all 0.2s ease-in;
+    font-family: Poppins;
+    cursor: pointer;
+}
+.Carreira-petro button:hover{
+    background-color: #f7c145;
+    box-shadow: 2px 2px #fff,
+                4px 4px #27be73;
+    color: white;
+}
+
+
+/*
+* * PAINEL SECUNDARIO
+ ! PERSONALIZAÇÃO DA H1 -> "DESTAQUE" // PERSONALIZAÇÃO TRAÇO AMARELO
+*/
+section > h1{
+    font-family: Roboto;
+    border-bottom: 6px solid #ffcf60;
+    width: 135px;
+    padding: 8px;
+    font-size: 32px;
+    margin: auto;
+}
+section hr{
+    width: 60px;
+    padding: 6px;
+    background-color: #ffcf60;
+    border: none;
+    border-radius: 30px;
+}
+
+
+
+/*
+* * PAINEL SECUNDARIO
+ ! PERSONALIÇÃO DOS CARDS EM "DESTAQUE"
+*/
+.card-display{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    transition:all 0.3s ease-in;
+}
+#card-1, #card-2, #card-3{
+    margin: 20px;
+    min-width: 350px;
+    max-width: 350px;
+    font-family: Poppins;
+    text-align: center;
+    cursor: pointer;
+    padding: 15px;
+    border: 1px solid #f1f1f188;
+    box-shadow: 0px 5px 8px 0px rgba(0, 0, 0, 0.685);
+    transition:all 0.3s ease-in;
+}
+.card-display :hover{
+    transform: scale(1.05);
+}
+
+
+
+/*
+* * PAINEL QUARTO
+ ! PERSONALIZAÇÃO PAINEL QUARTO - "ACESSO"
+*/
+.Acesse-card{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    transition: all 0.5s ease-in;
+}
+.Acesse-card h1{
+    font-family: Poppins;
+}
+.Acesse-card button{
+    display: none;
+    padding: 10px;
+    width: 160px;
+    border-radius: 20px;
+    border: none;
+    transition: all 2s ease-in;
+    
+}
+.Acessar{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+
+/*
+* * PAINEL QUARTO
+ ! ANIMAÇÃO DE QUANDO O USUARIO PASSAR O MOUSE NOS CARDS O BOTÃO "ACESSAR" IRAR APARECER.
+*/
+#card-1-acesse:hover button{
+    display: block;
+   
+}
+#card-2-acesse:hover button{
+    display: block;
+    
+}
+#card-3-acesse:hover button{
+    display: block;
+    
+}
+#card-4-acesse:hover button{
+    display: block;
+    
+}
+
+
+/*
+* * PAINEL QUARTO
+ ! ANIMAÇÃO DE QUANDO O USUARIO PASSAR O MOUSE NOS CARDS O BACKGROUND IRÁ MUDAR PARA UMA COR DISTINTA.
+*/
+#card-1-acesse:hover{
+    background-image: none;
+    background-color: #0d8248a9;
+    
+}
+#card-2-acesse:hover{
+    background-image: none;
+    background-color: #0d8248a9;
+    
+}
+#card-3-acesse:hover{
+    background-image: none;
+    background-color: #0d8248a9;
+    
+}
+#card-4-acesse:hover{
+    background-image: none;
+    background-color: #0d8248a9;
+    
+}
+
+/*
+* * PAINEL QUARTO
+ ! PERSONALIZAÇÃO DOS CARDS SOBRE "ACESSO"
+*/
+#card-1-acesse, #card-2-acesse, #card-3-acesse, #card-4-acesse{
+    background-size: cover;
+    color: white;
+    padding: 30px;
+    width: 200px;
+    height: 300px;
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-between;
+    transition: all 0.5s ease-in;
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.356);
+}
+
+/*
+* * PAINEL QUARTO
+ ! BACKGROUND DOS CARDS "ACESSO"
+*/
+#card-1-acesse{ 
+    background-image: url(img/edificio-sede-da-Petrobras-Edise-4.jpg); 
+}
+#card-2-acesse{
+    background-image: url(img/tagreuters.com2023binary_LYNXMPEJ770J5-FILEDIMAGE.webp);
+}
+#card-3-acesse{
+    background-image: url(img/petrobras-petr4-acoes-800x450.jpg);
+    background-position: center;
+}
+#card-4-acesse{
+    background-image: url(img/petrobras-petr4-apos-adesao-brasil-opep.webp);
+    background-position: center;
+}
+
+
+
+/*
+ * * PAINEL FOOTER
+ ! PERSONALIZAÇÃO DA FOOTER
+*/
+footer{
+    background-color: #fff;
+    padding: 50px 0px 0px 0px;
+    
+}
+.informacao{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    
+    padding: 80px;
+}
+
+/*
+* * PAINEL FOOTER
+ ! PRIMEIRA CAIXA - CONTEM INFORMÇÕES
+*/
+#info-1{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-content: space-around;
+}
+#info-icon{
+    filter: opacity(75%);
+    display: flex;
+    gap: 20px;
+    
+    
+}
+
+/*
+* * PAINEL FOOTER
+ ! SEGUNDA CAIXA - CONTEM INFORMÇÕES
+*/
+#info-2{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+}
+#info-2 h2{
+    font-family: Roboto;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+/*
+* * PAINEL FOOTER
+ ! ABA DE PESQUISA
+*/
+#pesquisa-info{
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    width: 200px;
+    padding: 8px;
+    border-radius: 50px;
+}
+#pesquisa-info input{
+    border: none;
+    outline: none;
+}
+
+/*
+* * PAINEL FOOTER
+ ! TERCEIRA CAIXA - CONTEM INFORMÇÕES
+*/
+#info-3{
+    display: flex;
+    justify-content: space-evenly;
+    
+    
+}
+#info-3 hr{
+    margin: 8px;
+    background-color: #f7c145;
+    
+}
+#info-3 p{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin: 0px;
+    padding: 4px;
+    cursor: pointer;
+}
+#info-3 a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/*
+* * PAINEL FOOTER
+ ! SEGUNDO PAINEL DA FOOTER - ABA DE DESTAQUE E INFORMAÇÕES
+*/
+.informacao-2{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    align-items: baseline;
+    font-family: Poppins;
+}
+.informacao-2 h2{
+    font-size: 16px;
+}
+.informacao-2 p{
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/*
+* * PAINEL FOOTER
+ ! PERSONALIZAÇÃO DO TRAÇO FOOTER
+*/
+footer #linha-footer-termine{
+    padding: 4px;
+    background-color: #f9f9f9;
+    border: none;
+}
+
+/*
+* * PAINEL FOOTER
+ ! PAINEL FINAL FOOTER
+*/
+.footer-2{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Poppins;
+    font-size: 14px;
+    padding: 20px;
+    cursor: pointer;
+    background-color: #e4e4e459;
+}
+.footer-2 #lista-footer-2{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 30px;
+    padding: 0px;
+}
+
+.footer-2 #copy-footer{
+    color: #b6b6b6;
+}
