@@ -1,0 +1,134 @@
+@font-face {
+    font-family: Poppins;
+    src: url(/font/Poppins-Regular.ttf);
+}
+@font-face {
+    font-family: Roboto;
+    src: url(/font/Roboto-Regular.ttf);
+}
+body{
+    margin: 0;
+}
+
+
+
+
+.displayOpcao{
+    display: flex;
+    justify-content: space-around;
+    align-items: baseline;
+}
+#opcao{
+    
+    width: 250px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 100px;
+}
+#opcao button{
+    width: 250px;
+    padding: 18px;
+    font-size: 16px;
+    font-family: Roboto;
+    background-color: white;
+    border: none;
+    margin: 10px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.315);
+}
+.tipos-edit{
+    margin-top: 100px;
+}
+#tela-edit{
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.308);
+    width: 920px;
+    height: 750px;
+    display: flex;
+    padding: 15px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#tela-edit form{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#tela-edit h2{
+    font-family: Roboto;
+}
+.label-input{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+.label-input input{
+    width: 300px;
+    padding: 8px;
+    outline: none;
+}
+.label-input label{
+    font-family: Poppins;
+    font-size: 12px;
+}
+section{
+    display: flex;
+    justify-content: space-around;
+}
+#selecao-civil{
+    width: 500px;
+    margin: auto;
+    text-align: center;
+}
+#selecao-civil select{
+    width: 500px;
+    padding: 6px;
+    outline: none;
+}
+#selecao-civil label{
+    font-family: Poppins;
+    font-size: 12px
+}
+#cep-estilo{
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    margin: 0px 0px 40px 0px;
+    
+}
+#bttConsulta, #bttLimpar{
+    width: 150px;
+    padding: 8px;
+    margin: 0px 5px;
+    background-color: #0d8248;
+    color: white;
+    border: none;
+    font-family: Poppins;
+}
+#separacao-1{
+    border: 1px solid rgba(0, 0, 0, 0.233);
+    padding: 10px;
+    margin: 0px 0px 40px 0px;
+}
+#separacao-2{
+    border: 1px solid rgba(0, 0, 0, 0.226);
+    padding: 40px;
+    
+}
+#editar-inputs{
+    width: 150px;
+    padding: 10px;
+    margin: 40px 0px 0px 0px ;
+    font-family: Poppins;
+    background-color: black;
+    color: white;
+    border: none;
+}
+#save-inputs{
+    width: 150px;
+    padding: 10px;
+    border: none;
+    background-color: #ffcf60;
+    font-family: Poppins;
+}
