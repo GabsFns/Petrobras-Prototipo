@@ -1,7 +1,0 @@
-<?php
-
-include 'conexoBanco.php'
-
-
-
-?>

@@ -102,3 +102,19 @@ function SalvarInput() {
     input.disabled = true;
   });                                               //Se todos os campos estiverem preenchidos, desabilitamos todos os campos percorrendo novamente a array inputs e definindo a propriedade disabled como true. Isso impede que o usuário modifique os campos após o salvamento.
 }
+
+
+
+
+function mostrarConteudo(id) {
+  // Oculta todos os conteúdos
+  var contents = document.getElementsByClassName('content');
+  for (var i = 0; i < contents.length; i++) {
+      contents[i].style.display = 'none';
+  }
+  // Mostra o conteúdo desejado
+  var contentToShow = document.getElementById(id);
+  if (contentToShow) {
+      contentToShow.style.display = 'block';
+  }
+}

@@ -9,6 +9,86 @@
 body{
     margin: 0;
 }
+/*
+ ! CABECALHO
+*/
+header{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 10px;
+    box-shadow: 0px 1px 15px 0px;
+    filter: opacity(95%);
+}
+
+/*
+ * * CABECALHO
+ ! BARRA DE PESQUISA E SUAS ANIMAÇÕES
+*/
+header #barra-pesquisa{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+#barra-pesquisa p{
+    font-family: Poppins;
+    font-size: 14px;
+    border: 1px solid rgb(255, 255, 255);
+    transition: 0.2s ease-in-out;
+    cursor: pointer; 
+}
+#barra-pesquisa p:hover{
+    
+    border-bottom: 2px solid #ffcf60;
+}
+#barra-pesquisa button{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    font-family: Poppins;
+    border-radius: 30px;
+    border: none;
+    padding: 15px;
+    transition: all 0.2s ease-in-out;
+}
+#barra-pesquisa button:hover{
+    background-color: #0d8248;
+    color: white;
+}
+
+/*
+ * * CABECALHO
+ ! MENU DROPDOWN (ENTRAR E CADASTRAR)
+*/
+.dropdown {
+    position: relative;
+    display: inline-block;
+    flex-wrap: wrap;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 195px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-family: Poppins;
+}  
+.dropdown:hover .dropdown-content {
+    display: block;
+}  
+.dropdown-content a:hover {
+    background-color: #f1f1f1
+}
+
 
 
 
@@ -16,7 +96,7 @@ body{
 .displayOpcao{
     display: flex;
     justify-content: space-around;
-    align-items: baseline;
+    align-items: flex-start;
 }
 #opcao{
     
@@ -50,6 +130,12 @@ body{
     flex-direction: column;
     flex-wrap: wrap;
 }
+
+.content{
+    display: none;
+    transition: all 2s ease-in;
+}
+
 #tela-edit form{
     display: flex;
     flex-direction: column;
@@ -58,6 +144,10 @@ body{
 #tela-edit h2{
     font-family: Roboto;
 }
+
+
+
+
 .label-input{
     display: flex;
     flex-direction: column;
@@ -72,6 +162,11 @@ body{
     font-family: Poppins;
     font-size: 12px;
 }
+
+
+
+
+
 section{
     display: flex;
     justify-content: space-around;
@@ -97,6 +192,12 @@ section{
     margin: 0px 0px 40px 0px;
     
 }
+
+
+
+
+
+
 #bttConsulta, #bttLimpar{
     width: 150px;
     padding: 8px;
@@ -116,6 +217,11 @@ section{
     padding: 40px;
     
 }
+
+
+
+
+
 #editar-inputs{
     width: 150px;
     padding: 10px;
@@ -131,4 +237,32 @@ section{
     border: none;
     background-color: #ffcf60;
     font-family: Poppins;
+}
+
+#tela-ajuda{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#conteudo-grafico, #conteudo-info, #conteudo-ajuda{
+    border: 1px solid rgba(0, 0, 0, 0.11);
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.308);
+    width: 920px;
+    height: 750px;
+    display: flex;
+    padding: 15px;
+    font-family: Roboto;
+}
+#conteudo-ajuda{
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+#conteudo-ajuda .caixa-ajuda{
+    margin: 10px;
+    border: 1px solid black;
+    width: 800px;
+    height: 120px;
 }

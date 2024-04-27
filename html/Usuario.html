@@ -8,20 +8,29 @@
     <title>Document</title>
   </head>
   <body>
-    <header></header>
+    <header>
+        <img class="icone-logo" src="/img/images.png" alt="" width="300px">
+        <ul id="barra-pesquisa">
+            <p>Inovação e Tecnologia</p>
+            <p>Sustentabilidade</p>
+            <p>Energia em Transformção</p>
+            <p>Quem Somos?</p>
+               <button><img src="/img/2354573.png" alt="" width="30px"></button>  
+        </ul>
+    </header>
 
     <main>
 
     <div class="displayOpcao"> 
       <article id="opcao">
-        <button>Perfil</button>
-        <button>Graficos</button>
-        <button>Informções de Refinaria</button>
-        <button>Ajuda</button>
+        <button onclick="mostrarConteudo('tela-edit')">Perfil</button>
+        <button onclick="mostrarConteudo('tela-Renda')">Graficos</button>
+        <button onclick="mostrarConteudo('tela-info')">Informções de Refinaria</button>
+        <button onclick="mostrarConteudo('tela-ajuda')">Ajuda</button>
       </article>
 
       <article class="tipos-edit">
-        <aside id="tela-edit">
+        <aside id="tela-edit" class="content">
           <h2>Editar Perfil</h2>
 
           <form action="" onsubmit="event.preventDefault(); consultarCEP()">
@@ -111,14 +120,33 @@
     </aside>  
 
         </aside>
-            <aside id="tela-Renda">
-                <div class="grafico-manipulacao">
-                    <canvas id="GraficoRenda">
-
-                    </canvas>
+            <aside id="tela-Renda" class="content">
+                <div id="conteudo-grafico">
+                    <h2>Grafico de Renda</h2>
                 </div>
             </aside>
-            <aside id="tela-ajuda"></aside>
+        </aside>
+
+        <aside id="tela-info" class="content">
+            <div id="conteudo-info">
+                <h2>Informções</h2>
+            </div>
+        </aside>
+
+        <aside id="tela-ajuda" class="content">
+                <div id="conteudo-ajuda">
+                    <h2>Ajuda e Suporte</h2>
+                     <section class="caixa-ajuda">
+
+                     </section>
+                     <section class="caixa-ajuda">
+
+                     </section>
+                     <section class="caixa-ajuda">
+
+                     </section>
+                </div>
+            </aside>
       </article>
     </div>   
       
